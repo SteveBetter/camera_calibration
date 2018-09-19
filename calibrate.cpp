@@ -55,7 +55,13 @@ int main(int argc, char *argv[]) {
         help(argv);
         return -1;
     }
+//////////////////
 
+	capture.set(CV_CAP_PROP_FRAME_WIDTH, 1280);
+	capture.set(CV_CAP_PROP_FRAME_HEIGHT, 720);
+
+
+/////////////////
     // ALLOCATE STORAGE
     //
     vector<vector<cv::Point2f> > image_points;
